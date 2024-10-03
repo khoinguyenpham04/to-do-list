@@ -1,0 +1,106 @@
+:root {
+  --navy: #001f3f;
+  --light-navy: #003366;
+  --white: #ffffff;
+  --gray: #d3d3d3;
+  --light-gray: #f0f0f0;
+  --accent: #ffcc00;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--light-navy);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: var(--navy);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid var(--gray);
+  border-radius: 5px;
+  width: calc(100% - 24px);
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--navy);
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: var(--light-gray);
+}
+
+.list {
+  margin-top: 20px;
+}
+
+.task {
+  background-color: var(--light-navy);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.task.dragging {
+  background-color: var(--accent);
+}
+
+.task h1 {
+  margin: 0;
+  font-size: 18px;
+  flex-grow: 1; /* Allow the task name to take up available space */
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px; /* Add space between buttons */
+}
+
+.task-buttons button {
+  padding: 5px 10px; /* Adjust padding for smaller buttons */
+}
+
+.completed {
+  text-decoration: line-through;
+  color: var(--gray);
+}
+
+input, button {
+  transition: all 0.3s ease;
+}
+
+.addTask {
+  margin-bottom: 20px;
+}
