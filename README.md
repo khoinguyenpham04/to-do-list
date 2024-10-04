@@ -1,5 +1,8 @@
 # To-Do List Application
 
+
+![To-Do List Screenshot](/public/screenshot.png)
+
 This project is a simple and intuitive To-Do List application built with [Create React App](https://github.com/facebook/create-react-app). It allows users to add, edit, delete, and mark tasks as completed. The application also displays the current time, which updates every second.
 
 ## Features
@@ -28,7 +31,7 @@ Ensure you have the following installed on your machine:
    ```sh
    git clone https://github.com/<username>/to-do-list.git
    cd to-do-list
-   
+
 ## Available Scripts
 
 In the project directory, you can run:
