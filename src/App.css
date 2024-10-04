@@ -92,6 +92,14 @@ button:hover {
   padding: 5px 10px; /* Adjust padding for smaller buttons */
 }
 
+.task-input {
+  width: 100%; /* Make the input take the full width of its container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  white-space: pre-wrap; /* Preserve whitespace and wrap text */
+  word-wrap: break-word; /* Break long words and wrap them to the next line */
+  overflow-wrap: break-word; /* Ensure long words break and wrap */
+}
+
 .completed {
   text-decoration: line-through;
   color: var(--gray);
