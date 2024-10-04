@@ -75,7 +75,7 @@ function App() {
   return (
     <div className="App">
       <div className="Header">
-        <h1>Noah's Todo List</h1>
+        <h1>Get things done!</h1>
       </div>
 
       <div className="current-time">

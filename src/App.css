@@ -1,6 +1,6 @@
 :root {
-  --navy: #c2bcb2;
-  --light-navy: #003366;
+  --navy: hsl(38, 12%, 73%);
+  --light-navy: #1c3651;
   --white: #ffffff;
   --gray: #d3d3d3;
   --light-gray: hsl(0, 0%, 94%);
