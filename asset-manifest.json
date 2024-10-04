@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/khoinguyenpham04/to-do-list/static/css/main.2c2bfa26.css",
+    "main.js": "/khoinguyenpham04/to-do-list/static/js/main.32626112.js",
+    "static/media/background.jpg": "/khoinguyenpham04/to-do-list/static/media/background.8e637e3b9a4add730caa.jpg",
+    "index.html": "/khoinguyenpham04/to-do-list/index.html",
+    "main.2c2bfa26.css.map": "/khoinguyenpham04/to-do-list/static/css/main.2c2bfa26.css.map",
+    "main.32626112.js.map": "/khoinguyenpham04/to-do-list/static/js/main.32626112.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c2bfa26.css",
+    "static/js/main.32626112.js"
+  ]
+}
