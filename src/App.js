@@ -26,7 +26,7 @@ function App() {
     };
   
     setTodoList([...todoList, task]);
-    //setNewTask(""); // Clear the input field after adding the task
+    setNewTask(""); // Clear the input field after adding the task
   };
 
   const deleteTask = (id) => {
@@ -72,7 +72,7 @@ function App() {
 
       <div className="add Task"> 
         <div>
-          <input onChange={handleChange}/>
+          <input onChange={handleChange} value={newTask}/>
           <button onClick={addTask}> Add Task</button>
         </div>
       </div>
