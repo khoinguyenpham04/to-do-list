@@ -1,13 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
   const [todoList, setTodoList] = useState([]);
   const [newTask, setNewTask] = useState("");
+  const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
   
   const [editingTaskId, setEditingTaskId] = useState(null);
   const [editingTaskName, setEditingTaskName] = useState("");
 
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date().toLocaleTimeString());
+    }, 1000);
+
+    return () => clearInterval(timer); // Cleanup the interval on component unmount
+  }, []);
 
   const handleChange = (event) => {
     setNewTask(event.target.value);
@@ -69,11 +78,14 @@ function App() {
         <h1>Noah's Todo List</h1>
       </div>
 
+      <div className="current-time">
+        The current time is: {currentTime}
+      </div>
 
       <div className="add Task"> 
         <div>
-          <input onChange={handleChange} value={newTask}/>
-          <button onClick={addTask}> Add Task</button>
+          <input className="task-input" onChange={handleChange} value={newTask}/>
+          <button className="add-task-button" onClick={addTask}> Add Task</button>
         </div>
       </div>
 
